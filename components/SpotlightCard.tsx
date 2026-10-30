@@ -23,12 +23,10 @@ export default function SpotlightCard({ children, className = "", ...props }: Sp
     <div
       ref={cardRef}
       onMouseMove={handleMouseMove}
-      className={`spotlight-card ${className}`}
+      className={`spotlight-card relative ${className}`}
       {...props}
     >
-      <div className="relative z-10 w-full h-full">
-        {children}
-      </div>
+      {children}
     </div>
   );
 }

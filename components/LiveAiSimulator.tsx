@@ -136,7 +136,7 @@ export default function LiveAiSimulator() {
   }, [activeTab, current.logs.length]);
 
   return (
-    <section className="relative w-full scroll-mt-24 py-16 md:py-24 border-b border-white/[0.06] bg-[#070709] overflow-hidden">
+    <section id="simulator" className="relative w-full scroll-mt-24 py-16 md:py-24 border-b border-white/[0.06] bg-[#070709] overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-blue-600/[0.07] blur-[150px] pointer-events-none rounded-full" />
 
