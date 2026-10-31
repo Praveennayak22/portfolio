@@ -8,8 +8,9 @@ const NAV_LINKS = [
   { label: "Simulator", href: "#simulator" },
   { label: "Selected Work", href: "#projects" },
   { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
   { label: "About", href: "#about" },
 ];
 
@@ -43,7 +44,7 @@ export default function Navbar() {
                   Praveen Kumar
                 </span>
                 <span className="text-[10px] font-mono text-zinc-400 hidden sm:inline-block -mt-0.5">
-                  AI Systems &amp; Python
+                  AI Systems &amp; Full-Stack Web
                 </span>
               </div>
             </Link>

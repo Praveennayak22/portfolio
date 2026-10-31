@@ -1,6 +1,9 @@
 "use client";
 
 const TICKER_ITEMS = [
+  { label: "Modern Full-Stack Apps · Next.js & React", tag: "Frontend" },
+  { label: "Stanford & DeepLearning.AI Certified (Andrew Ng)", tag: "Verified" },
+  { label: "University of London Full-Stack JS & MongoDB Certified", tag: "Accredited" },
   { label: "1.8M+ Files Processed in Production", tag: "Scale" },
   { label: "53,000+ Verified AI Reasoning Traces", tag: "LLMs" },
   { label: "9 Languages AST Transpilation", tag: "Compilers" },
@@ -8,8 +11,8 @@ const TICKER_ITEMS = [
   { label: "40+ Production REST Endpoints with FastAPI", tag: "Backend" },
   { label: "13,700+ Multimodal Datasets Annotated", tag: "ML" },
   { label: "100% Deterministic Testing & Checkpointing", tag: "Reliability" },
-  { label: "Open for Worldwide Freelance AI Contracts", tag: "Available" },
   { label: "IIT Gandhinagar · Artificial Intelligence", tag: "Education" },
+  { label: "Open for Worldwide Contracts & Freelance Roles", tag: "Available" },
 ];
 
 export default function TechTicker() {

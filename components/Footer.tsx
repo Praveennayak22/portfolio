@@ -4,12 +4,13 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/data";
 
 const NAV_LINKS = [
-  { label: "Experience", href: "#experience" },
+  { label: "Simulator", href: "#simulator" },
   { label: "Work", href: "#projects" },
   { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
-  { label: "Recognition", href: "#recognition" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -25,7 +26,7 @@ export default function Footer() {
             Praveen Kumar
           </p>
           <p className="text-[13px] text-zinc-500">
-            © {currentYear} Praveen Kumar. AI &amp; Python Developer. All rights reserved.
+            © {currentYear} Praveen Kumar. AI Systems &amp; Full-Stack Web Developer. All rights reserved.
           </p>
         </div>
 

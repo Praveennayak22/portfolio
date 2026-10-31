@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Code2, Brain, Server, Database, Wrench, Share2, Check, Sparkles } from "lucide-react";
+import { Globe, Brain, Server, Eye, Database, Wrench, Code2 } from "lucide-react";
 import { skills } from "@/lib/data";
 import SpotlightCard from "@/components/SpotlightCard";
 
 const CATEGORY_ICONS: Record<string, React.ElementType> = {
-  "Programming Languages": Code2,
-  "AI and Machine Learning": Brain,
-  "Backend Technologies": Server,
-  "Data Engineering": Database,
-  "Developer Tools": Wrench,
-  "APIs and Integrations": Share2,
+  "Full-Stack Web": Globe,
+  "AI & Machine Learning": Brain,
+  "Backend & Systems": Server,
+  "NLP & Computer Vision": Eye,
+  "Data & Distributed Systems": Database,
+  "Developer Tools & DevOps": Wrench,
 };
 
 export default function Skills() {
@@ -19,12 +19,13 @@ export default function Skills() {
 
   const categories = Object.keys(skills);
 
-  const filteredCategories = filter === "All" 
-    ? categories 
-    : categories.filter(c => {
-        if (filter === "AI & ML") return c.includes("AI") || c.includes("Machine");
-        if (filter === "Backend") return c.includes("Backend") || c.includes("APIs");
-        if (filter === "Data & Infra") return c.includes("Data") || c.includes("Tools");
+  const filteredCategories = filter === "All"
+    ? categories
+    : categories.filter((c) => {
+        if (filter === "Full-Stack Web") return c.includes("Web");
+        if (filter === "AI & ML") return c.includes("AI") || c.includes("NLP") || c.includes("Vision");
+        if (filter === "Backend & Systems") return c.includes("Backend");
+        if (filter === "Data & Infra") return c.includes("Data") || c.includes("Tools") || c.includes("DevOps");
         return true;
       });
 
@@ -41,13 +42,13 @@ export default function Skills() {
               Tools and disciplines I build with
             </h2>
             <p className="mt-2 text-[15px] sm:text-[16px] text-zinc-400 max-w-xl">
-              Categorized by domain with zero arbitrary percentage bars — each technology backed by real production code and verifiable projects.
+              Categorized by domain with zero arbitrary percentage bars — each technology backed by real production code, verifiable projects, and accredited coursework.
             </p>
           </div>
 
           {/* Interactive Filter Pills */}
           <div className="flex flex-wrap gap-2">
-            {["All", "AI & ML", "Backend", "Data & Infra"].map((tab) => (
+            {["All", "Full-Stack Web", "AI & ML", "Backend & Systems", "Data & Infra"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setFilter(tab)}
@@ -98,27 +99,11 @@ export default function Skills() {
 
                 <div className="mt-6 pt-3 border-t border-white/[0.04] flex items-center justify-between text-[11px] font-mono text-zinc-500">
                   <span>{items.length} tools verified</span>
-                  <span className="text-emerald-400/80">production-ready</span>
+                  <span className="text-emerald-400/90 font-medium">Production ready</span>
                 </div>
               </SpotlightCard>
             );
           })}
-        </div>
-
-        {/* Client Guarantee Banner */}
-        <div className="mt-10 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex-shrink-0">
-              <Sparkles size={16} />
-            </div>
-            <div>
-              <p className="text-[14px] font-medium text-white">Need an integration with a bespoke library or internal stack?</p>
-              <p className="text-[12px] text-zinc-400">If it runs on Linux, Python, or standard cloud APIs, I can architect and ship it.</p>
-            </div>
-          </div>
-          <a href="#contact" className="btn-secondary text-[12px] py-1.5 px-4 flex-shrink-0">
-            Discuss Your Stack
-          </a>
         </div>
       </div>
     </section>

@@ -7,6 +7,8 @@ import {
   Server,
   GitBranch,
   FileSearch,
+  Layout,
+  Globe,
   Check,
   ArrowRight,
 } from "lucide-react";
@@ -15,6 +17,8 @@ import { services } from "@/lib/data";
 import SpotlightCard from "@/components/SpotlightCard";
 
 const ICONS: Record<string, React.ElementType> = {
+  Layout,
+  Globe,
   Bot,
   Zap,
   Brain,
@@ -36,7 +40,7 @@ export default function Services() {
             What I build for clients
           </h2>
           <p className="mt-3 text-[16px] text-zinc-400">
-            Specialized engineering across applied AI, automated workflows, and backend infrastructure. Built for reliability, precision, and production scale.
+            Specialized engineering across modern full-stack web applications, applied AI systems, and high-performance backend infrastructure. Built for reliability, precision, and production scale.
           </p>
         </header>
 

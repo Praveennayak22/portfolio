@@ -25,13 +25,13 @@ export default function About() {
           {/* Left Column (7 cols): Narrative */}
           <div className="md:col-span-7 space-y-5 text-[15px] sm:text-[16px] leading-relaxed text-zinc-300">
             <p>
-              I am an AI developer and undergraduate at <span className="text-white font-semibold">IIT Gandhinagar</span> specializing in Artificial Intelligence. My work sits at the intersection where modern LLM architectures meet production backend reliability.
+              I am an AI Systems &amp; Full-Stack Web Developer and undergraduate at <span className="text-white font-semibold">IIT Gandhinagar</span> specializing in Artificial Intelligence. My work sits at the intersection where modern web interfaces, reactive frontend architectures, and high-reliability AI backends converge.
             </p>
             <p>
               During my engineering work at <span className="text-white font-semibold">Soket AI Labs</span>, I designed compiler-feedback validation loops and scaled code-transpilation pipelines across Kubernetes and SLURM to process over <span className="text-blue-400 font-medium">1.8 million files</span> and <span className="text-blue-400 font-medium">6.1 billion tokens</span> without data loss.
             </p>
             <p>
-              Whether orchestrating synthetic mathematical reasoning datasets with DeepSeek-V3.2, engineering multi-threaded web scraping workers, or building ACID-compliant storage engines with write-ahead logging from first principles, I believe great software is defined by how gracefully it handles failures, retries, and high-concurrency pressure.
+              Alongside distributed AI infrastructure, I build production-grade web applications — combining modern React, Next.js, and TypeScript frontends with MongoDB/PostgreSQL backends, REST APIs, and automated test harnesses. Whether building user-facing web tools, ACID-compliant database engines, or complex LLM pipelines, I engineer software built to withstand real production usage.
             </p>
             <p className="text-zinc-400 text-[14px]">
               When collaborating with founders, engineering leads, and freelance clients worldwide, I prioritize clear asynchronous communication, rigorous test suites, and turnkey codebases that your internal team can deploy and maintain effortlessly.

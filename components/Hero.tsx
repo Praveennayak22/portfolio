@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Mail, Copy, Check, Sparkles, Terminal, Activity, Layers, Cpu, ShieldCheck } from "lucide-react";
+import { ArrowRight, Mail, Copy, Check, Sparkles, Terminal, Activity, Layers, Cpu, ShieldCheck, Globe } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/lib/data";
 
@@ -49,13 +49,12 @@ export default function Hero() {
 
           {/* Main Headline with distinctive gradient emphasis */}
           <h1 className="font-display text-[2rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] text-white mb-6 leading-[1.08] tracking-tight">
-            Architecting <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">production AI systems</span>, Python automation, and verified backend pipelines.
+            Architecting <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">production AI systems</span>, modern full-stack web applications, and verified backend pipelines.
           </h1>
 
           {/* Subtitle */}
           <p className="max-w-xl text-[16px] sm:text-[17px] leading-relaxed text-zinc-300/90 mb-6">
-            From multi-language AST transpilation and SLURM distributed pipelines to high-throughput
-            FastAPI services and intelligent document extractors. I build dependable systems that operate reliably at scale.
+            From responsive React &amp; Next.js interfaces with MongoDB/PostgreSQL backends to multi-language AST transpilation and SLURM distributed pipelines. I build dependable systems that operate reliably at scale.
           </p>
 
           {/* Creative Quick Capability Switcher */}
@@ -68,6 +67,13 @@ export default function Hero() {
               <span>Multi-Agent &amp; LLM Systems</span>
             </a>
             <a
+              href="#services"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-white/[0.08] bg-white/[0.03] px-2.5 py-1 text-[12px] font-medium text-zinc-300 hover:border-emerald-400/50 hover:bg-emerald-500/10 hover:text-emerald-300 transition-all"
+            >
+              <Globe size={13} className="text-emerald-400" />
+              <span>Full-Stack Web (Next.js &amp; React)</span>
+            </a>
+            <a
               href="#simulator"
               className="inline-flex items-center gap-1.5 rounded-lg border border-white/[0.08] bg-white/[0.03] px-2.5 py-1 text-[12px] font-medium text-zinc-300 hover:border-cyan-400/50 hover:bg-cyan-500/10 hover:text-cyan-300 transition-all"
             >
@@ -75,11 +81,11 @@ export default function Hero() {
               <span>HPC SLURM &amp; Batch Pipelines</span>
             </a>
             <a
-              href="#simulator"
+              href="#certifications"
               className="inline-flex items-center gap-1.5 rounded-lg border border-white/[0.08] bg-white/[0.03] px-2.5 py-1 text-[12px] font-medium text-zinc-300 hover:border-indigo-400/50 hover:bg-indigo-500/10 hover:text-indigo-300 transition-all"
             >
-              <Layers size={13} className="text-indigo-400" />
-              <span>FastAPI &amp; Microservices</span>
+              <ShieldCheck size={13} className="text-indigo-400" />
+              <span>Stanford &amp; UoL Certified</span>
             </a>
           </div>
 
