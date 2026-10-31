@@ -26,21 +26,21 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 w-full z-50 pt-3 sm:pt-4 px-4 sm:px-6 pointer-events-none">
+      <header className="fixed top-0 left-0 right-0 w-full z-50 pt-3 sm:pt-4 px-3 sm:px-6 pointer-events-none">
         <div className="mx-auto max-w-5xl pointer-events-auto">
           {/* Unified Command-Bar Island (Original & Creative) */}
-          <div className="flex items-center justify-between rounded-full border border-white/[0.09] bg-[#0c0c0e]/80 px-3.5 py-2 sm:px-4 sm:py-2.5 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.6),inset_0_1px_1px_rgba(255,255,255,0.08)]">
+          <div className="flex items-center justify-between rounded-full border border-white/[0.09] bg-[#0c0c0e]/80 px-3 py-1.5 sm:px-4 sm:py-2.5 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.6),inset_0_1px_1px_rgba(255,255,255,0.08)]">
             {/* Left Brand Identity */}
             <Link
               href="#top"
-              className="flex items-center gap-2.5 group pl-1.5"
+              className="flex items-center gap-2 group pl-1 shrink-0"
             >
-              <div className="relative flex h-2.5 w-2.5 items-center justify-center">
+              <div className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 items-center justify-center shrink-0">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.9)]" />
               </div>
               <div className="flex flex-col">
-                <span className="font-display text-[14px] font-semibold text-white tracking-tight group-hover:text-blue-300 transition-colors">
+                <span className="font-display text-[13px] sm:text-[14px] font-semibold text-white tracking-tight group-hover:text-blue-300 transition-colors">
                   Praveen Kumar
                 </span>
                 <span className="text-[10px] font-mono text-zinc-400 hidden sm:inline-block -mt-0.5">
@@ -63,15 +63,15 @@ export default function Navbar() {
             </nav>
 
             {/* Right Action Button */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
               <Link
                 href="#contact"
-                className="relative inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 sm:px-4 text-[12px] sm:text-[13px] font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-[0_0_16px_rgba(59,130,246,0.35)] transition-all duration-200 group overflow-hidden"
+                className="relative inline-flex items-center gap-1 sm:gap-1.5 rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-[11px] sm:text-[13px] font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-[0_0_16px_rgba(59,130,246,0.35)] transition-all duration-200 group overflow-hidden"
               >
-                <Sparkles size={12} className="text-blue-200 animate-pulse" />
+                <Sparkles size={11} className="text-blue-200 animate-pulse shrink-0" />
                 <span className="hidden sm:inline">Hire Praveen</span>
                 <span className="sm:hidden">Hire</span>
-                <ArrowUpRight size={13} className="text-blue-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight size={12} className="text-blue-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
               </Link>
 
               {/* Mobile Hamburger Trigger */}
