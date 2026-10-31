@@ -113,7 +113,7 @@ export default function Hero() {
             {/* Interactive Copy Email Action */}
             <button
               onClick={handleCopyEmail}
-              className="inline-flex items-center gap-2 rounded-lg px-2.5 py-1 border border-white/[0.08] bg-white/[0.04] text-zinc-300 hover:text-white hover:border-white/20 transition-all text-[13px]"
+              className="inline-flex items-center gap-2 rounded-lg px-2.5 py-1 border border-white/[0.08] bg-white/[0.04] text-zinc-300 hover:text-white hover:border-white/20 transition-all text-[13px] max-w-full"
             >
               {copied ? (
                 <>
@@ -122,9 +122,9 @@ export default function Hero() {
                 </>
               ) : (
                 <>
-                  <Mail size={14} />
-                  <span>{siteConfig.email}</span>
-                  <Copy size={12} className="text-zinc-500" />
+                  <Mail size={14} className="shrink-0" />
+                  <span className="truncate max-w-[190px] sm:max-w-none">{siteConfig.email}</span>
+                  <Copy size={12} className="text-zinc-500 shrink-0" />
                 </>
               )}
             </button>

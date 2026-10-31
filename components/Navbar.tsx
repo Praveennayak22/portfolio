@@ -66,10 +66,11 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               <Link
                 href="#contact"
-                className="relative inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[12px] sm:text-[13px] font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-[0_0_16px_rgba(59,130,246,0.35)] transition-all duration-200 group overflow-hidden"
+                className="relative inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 sm:px-4 text-[12px] sm:text-[13px] font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-[0_0_16px_rgba(59,130,246,0.35)] transition-all duration-200 group overflow-hidden"
               >
                 <Sparkles size={12} className="text-blue-200 animate-pulse" />
-                <span>Hire Praveen</span>
+                <span className="hidden sm:inline">Hire Praveen</span>
+                <span className="sm:hidden">Hire</span>
                 <ArrowUpRight size={13} className="text-blue-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
 
@@ -77,9 +78,9 @@ export default function Navbar() {
               <button
                 onClick={() => setOpen(!open)}
                 aria-label="Toggle Navigation"
-                className="md:hidden flex items-center justify-center w-9 h-9 rounded-full bg-white/[0.06] border border-white/[0.08] text-zinc-300 hover:text-white transition-all"
+                className="md:hidden flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/[0.06] border border-white/[0.08] text-zinc-300 hover:text-white transition-all shrink-0"
               >
-                {open ? <X size={16} /> : <Menu size={16} />}
+                {open ? <X size={15} /> : <Menu size={15} />}
               </button>
             </div>
           </div>
